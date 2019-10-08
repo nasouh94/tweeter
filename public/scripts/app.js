@@ -39,9 +39,9 @@ function renderTweets(tweets) {
 
 function createTweetElement(tweet) {
 
-  let $tweet = $("<article>").addClass("tweet-container");
+  // let $tweet = $("<article>").addClass("tweet-container");
 
-  const markup = `
+  const $tweet = `
   <article class ="tweet-container">
                 <img class= "profile-picture" src="${tweet.user.avatars}"> 
               <p class="username">${tweet.user.name}</p>
@@ -50,12 +50,12 @@ function createTweetElement(tweet) {
               <p class="date">${tweet.created_at}</p>
               </article>
   `;
- $tweet = $tweet.append(markup);
+//  $tweet = $tweet.append(markup);
 
   return $tweet;
 
 }
-console.log(createTweetElement(tweet))
+
 
 
 
