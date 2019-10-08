@@ -27,7 +27,51 @@ body {
   margin-top: 1.5em;
 
 }
+.tweet-container {
+  border: solid black;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  opacity: 0.7;
+   
+}
+.tweet-container:hover {
+  box-shadow: 10px 10px lightgray;
+  opacity: 1;
+}
 
+p.username {
+  position: relative;
+  margin: 1em;
+}
+
+.tweet-container p.handler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    display: none
+
+}
+
+.tweet-container:hover p.handler{  
+  /* box-shadow: 10px 10px grey; */
+  display:block
+  
+}
+
+
+
+p.tweet-content {
+  margin: 2em;
+}
+
+p.date {
+  border-top: solid;
+  margin: 2%;
+  font-size: medium;
+
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
