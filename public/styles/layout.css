@@ -45,13 +45,22 @@ p.username {
   margin: 1em;
 }
 
+.tweet-container img.profile-picture {
+  height: 50px;
+  width: 50px;
+  float: left;
+  margin-left: 35px;
+
+}
+
 .tweet-container p.handler {
     position: absolute;
     top: 0;
     right: 0;
     margin: 1em;
-    display: none
-
+    display: none;
+    opacity: 0.5;
+    
 }
 
 .tweet-container:hover p.handler{  
