@@ -1,0 +1,25 @@
+
+textarea {
+  width: 100%;
+  border: transparent;
+  background-color: transparent;
+  font-weight: bold;
+  border-bottom: solid black;
+}
+input {
+  font-family: "Bungee";
+  outline: none;
+  outline-style: none;
+  color: white;
+  background-color:#4056a1;
+  float: left
+  
+}
+.counter {
+  font-family: "bungee";
+  /* position: absolute;
+  right: 75px;
+  padding: 0;
+  margin: 0; */
+  float: right;
+}

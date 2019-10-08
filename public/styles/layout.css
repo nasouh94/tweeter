@@ -18,6 +18,14 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5em;
+
 }
 
 /*
