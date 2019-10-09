@@ -28,6 +28,11 @@ body {
 
 }
 .tweet-container {
+  margin-bottom: 30px;
+
+}
+
+.tweet {
   border: solid black;
   margin-top: 50px;
   width: 100%;
@@ -35,7 +40,7 @@ body {
   opacity: 0.7;
    
 }
-.tweet-container:hover {
+.tweet:hover {
   box-shadow: 10px 10px lightgray;
   opacity: 1;
 }
@@ -45,7 +50,7 @@ p.username {
   margin: 1em;
 }
 
-.tweet-container img.profile-picture {
+.tweet img.profile-picture {
   height: 50px;
   width: 50px;
   float: left;
@@ -53,7 +58,7 @@ p.username {
 
 }
 
-.tweet-container p.handler {
+.tweet p.handler {
     position: absolute;
     top: 0;
     right: 0;
@@ -63,7 +68,7 @@ p.username {
     
 }
 
-.tweet-container:hover p.handler{  
+.tweet:hover p.handler{  
   /* box-shadow: 10px 10px grey; */
   display:block
   

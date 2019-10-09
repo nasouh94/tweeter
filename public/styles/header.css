@@ -1,4 +1,4 @@
- header {
+ #top-header {
   height: 400px;
   width: 100%;
   background-color: #f3ddbab3;
@@ -7,16 +7,16 @@
   margin-top: 120px;
 }
 
-header div {
+#top-header  div {
   text-align: center;
   position: relative;
 }
 
-img {
+#top-header  img {
   margin-top: 20px
 }
 
-h2 {
+#top-header  h2 {
   position: relative;
 }
 
