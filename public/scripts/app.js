@@ -78,7 +78,15 @@ function loadTweet() {
     })
 }
 
+  function toggleBox(){
+    $( ".write-new-tweet" ).on("click", function() {
+      $( "#form-write-new-tweet" ).slideToggle();
+    });
+  }    
+    
+
 $(document).ready(function () {
   loadTweet()
+  toggleBox()
 })
 

@@ -12,3 +12,16 @@ nav {
 nav span {
   font-family: "Bungee", sans-serif;
 }
+
+nav .write-new-tweet {
+  float: right;
+  background: transparent;
+  border: transparent;
+  color: white;
+  opacity: 1;
+  opacity: 0.5;
+}
+
+nav .write-new-tweet:hover {
+  opacity: 1;
+}
