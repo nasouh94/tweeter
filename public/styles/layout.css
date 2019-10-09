@@ -25,6 +25,12 @@ body {
   display: none
 } */
 
+p.error {
+  text-align: center;
+    border: solid red;
+    color: red;
+}
+
 .container {
   width: 90%;
   margin: auto;
@@ -35,6 +41,7 @@ body {
   margin-bottom: 30px;
 
 }
+
 
 .tweet {
   border: solid black;

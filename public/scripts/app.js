@@ -58,11 +58,14 @@ $(function () {
     let text = textInput.split("=")[1]
     let error = validateInput(text)
     if (error) {
-      alert(error);
+      $( ".error").text(error);
+      $( ".error").slideToggle();
+      // alert(error);
     } else {
       $.ajax("/tweets/", { method: "POST", data: textInput })
         .done(function () {
           loadTweet()
+          $(".error").css("display", "none")
         }).error(function () {
           console.log("post tweet error")
         })
@@ -88,6 +91,7 @@ function loadTweet() {
 $(document).ready(function () {
   loadTweet()
   toggleBox()
-  $('#form-write-new-tweet').hide();
+  $("#form-write-new-tweet").hide();
+  $(".error").hide();
 })
 
