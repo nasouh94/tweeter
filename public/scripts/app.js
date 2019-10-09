@@ -79,7 +79,7 @@ function loadTweet() {
 }
 
   function toggleBox(){
-    $( ".write-new-tweet" ).on("click", function() {
+    $( ".write-new-tweet").on("click", function() {
       $( "#form-write-new-tweet" ).slideToggle();
     });
   }    
@@ -88,5 +88,6 @@ function loadTweet() {
 $(document).ready(function () {
   loadTweet()
   toggleBox()
+  $('#form-write-new-tweet').hide();
 })
 
