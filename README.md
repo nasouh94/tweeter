@@ -4,6 +4,11 @@ Tweeter is a simple, single-page Twitter clone. That uses HTML, CSS, JS, jQuery 
 
 The toggles were a fun addition to add to scroll up and show and hide the text box.
 
+!["Compose tweet box opened"] (https://github.com/nasouh94/tweeter/blob/master/docs/compose-tweet-box.png)
+!["Error message triggered"] (https://github.com/nasouh94/tweeter/blob/master/docs/error-message.png)
+!["Landing page"] (https://github.com/nasouh94/tweeter/blob/master/docs/landing-page.png)
+!["App view scalled down"] (https://github.com/nasouh94/tweeter/blob/master/docs/scalled%20down%20view.png)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
