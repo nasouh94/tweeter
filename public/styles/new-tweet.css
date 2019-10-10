@@ -17,9 +17,5 @@ input {
 }
 .counter {
   font-family: "bungee";
-  /* position: absolute;
-  right: 75px;
-  padding: 0;
-  margin: 0; */
   float: right;
 }

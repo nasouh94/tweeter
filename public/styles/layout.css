@@ -21,10 +21,6 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* .new-tweet{
-  display: none
-} */
-
 p.error {
   text-align: center;
     border: solid red;
@@ -80,11 +76,8 @@ p.username {
 }
 
 .tweet:hover p.handler{  
-  /* box-shadow: 10px 10px grey; */
   display:block
-  
 }
-
 
 
 p.tweet-content {
@@ -97,6 +90,30 @@ p.date {
   font-size: medium;
 
 }
+
+div.icon-box{
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+
+img.icon{
+  float: right;
+  width: 3%;
+  margin-right: 2%
+}
+
+@media only screen and (min-width: 1027px) {
+  .container {
+  width: 50%;
+  margin: 50px;
+  margin-top: 200px;
+  float: right;
+  display: block
+  
+  }
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

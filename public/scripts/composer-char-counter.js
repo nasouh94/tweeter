@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // --- our code goes here ---
-  
-  $("textarea").on("keyup", function(event) {
-    
+
+  $("#textarea").on("keyup", function () {
+
     let counter = 140 - $(this).val().length
     $(".counter").text(counter)
 
@@ -12,5 +12,5 @@ $(document).ready(function() {
       $(".counter").css('color', '#545149');
     }
   })
-  
+
 });
