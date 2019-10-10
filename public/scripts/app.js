@@ -72,7 +72,7 @@ $(function() {
       $.ajax("/tweets/", { method: "POST", data: textInput })
         .done(function() {
           loadTweet();
-          $(".error").css("display", "none");
+          // $(".error").css("display", "none");
           $("#textarea").val("");
           $(".counter").text(140);
         }).error(function() {
@@ -106,18 +106,52 @@ function toggleBox() {
 //a function that gets us the time and date
 function formatAMPM() {
   let d = new Date(),
-    minutes = d.getMinutes().toString().length ===1 ? '0' + d.getMinutes() : d.getMinutes(),
+    minutes = d.getMinutes().toString().length === 1 ? '0' + d.getMinutes() : d.getMinutes(),
     hours = d.getHours().toString().length === 1 ? '0' + d.getHours() : d.getHours(),
     ampm = d.getHours() >= 12 ? 'pm' : 'am',
     months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
     days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   return days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ' ' + hours + ':' + minutes + ampm;
-}
+};
+
+
+//hides the button at the top corner when scrolling
+function hideButton() {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+      $(".write-new-tweet").fadeOut();
+    } else {
+      $(".write-new-tweet").fadeIn();
+    }
+  });
+};
+
+//shows the button to scroll up when scrolling
+function showButton() {
+  $("#scrollUp").on("click", function(){
+    $("#form-write-new-tweet").slideToggle(1000);
+    $("html, body").animate({
+      scrollTop: $("<nav>").offset().top + $('window').height()
+    }, 2000);
+  })
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1) {
+      $("#scrollUp").fadeIn();
+    } else {
+      $("#scrollUp").fadeOut();
+    }
+  });
+};
+
+
 
 $(document).ready(function() {
   loadTweet();
   toggleBox();
   $("#form-write-new-tweet").hide();
   $(".error").hide();
+  hideButton()
+  showButton()
+  $("#scrollUp").hide()
 });
 

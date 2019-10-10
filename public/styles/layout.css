@@ -34,7 +34,7 @@ p.error {
 
 }
 .tweet-container {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
 }
 
@@ -101,6 +101,20 @@ img.icon{
   float: right;
   width: 3%;
   margin-right: 2%
+}
+
+#scrollUp {
+    background-color: transparent;
+    border: none;
+    float: right;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://ibb.co/XyfBbSV);
+    background-repeat:no-repeat;
+    
 }
 
 @media only screen and (min-width: 1027px) {
