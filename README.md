@@ -3,11 +3,12 @@
 Tweeter is a simple, single-page Twitter clone. That uses HTML, CSS, JS, jQuery and AJAX on the front end, and Node, Express and MongoDB on the backend.
 
 The toggles were a fun addition to add to scroll up and show and hide the text box.
-
-!["Compose tweet box opened"] (https://github.com/nasouh94/tweeter/blob/master/docs/compose-tweet-box.png)
-!["Error message triggered"] (https://github.com/nasouh94/tweeter/blob/master/docs/error-message.png)
-!["Landing page"] (https://github.com/nasouh94/tweeter/blob/master/docs/landing-page.png)
-!["App view scalled down"] (https://github.com/nasouh94/tweeter/blob/master/docs/scalled%20down%20view.png)
+ 
+## Screenshots
+!["Compose-tweet-box-opened"] (https://github.com/nasouh94/tweeter/blob/master/docs/compose-tweet-box.png)
+!["Error-message-triggered"] (https://github.com/nasouh94/tweeter/blob/master/docs/error-message.png)
+!["Landing-page"] (https://github.com/nasouh94/tweeter/blob/master/docs/landing-page.png)
+!["App-view-scalled-down"] (https://github.com/nasouh94/tweeter/blob/master/docs/scalled%20down%20view.png)
 
 ## Getting Started
 
