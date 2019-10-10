@@ -97,9 +97,9 @@ function loadTweet() {
 function toggleBox() {
   $(".write-new-tweet").on("click", function() {
     $("#form-write-new-tweet").slideToggle(1000);
-    $("html, body").animate({
-      scrollTop: $("<nav>").offset().top + $('window').height()
-    }, 2000);
+    // $("html, body").animate({
+    //   scrollTop: $("<nav>").offset().top + $('window').height()
+    // }, 2000);
   });
 }
 
@@ -135,7 +135,7 @@ function showButton() {
     }, 2000);
   })
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 1) {
+    if ($(this).scrollTop() > 100) {
       $("#scrollUp").fadeIn();
     } else {
       $("#scrollUp").fadeOut();
