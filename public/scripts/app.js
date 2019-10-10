@@ -97,9 +97,6 @@ function loadTweet() {
 function toggleBox() {
   $(".write-new-tweet").on("click", function() {
     $("#form-write-new-tweet").slideToggle(1000);
-    // $("html, body").animate({
-    //   scrollTop: $("<nav>").offset().top + $('window').height()
-    // }, 2000);
   });
 }
 
