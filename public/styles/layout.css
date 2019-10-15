@@ -75,6 +75,10 @@ p.username {
     
 }
 
+.tweet:hover .icon-box {
+  display: block;
+}
+
 .tweet:hover p.handler{  
   display:block
 }
@@ -95,6 +99,7 @@ div.icon-box{
   position: absolute;
   bottom: 8px;
   right: 0px;
+  display: none;
 }
 
 img.icon{
