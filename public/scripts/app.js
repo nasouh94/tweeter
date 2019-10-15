@@ -34,9 +34,9 @@ function createTweetElement(tweet) {
               <footer>
                 <p class="date">${formatAMPM()}</p>
                 <div class ="icon-box"> 
-                <a  href="/"><img class ="icon" src="/images/flag.png"></a>
-                <a href="/"><img class ="icon" src="/images/like.png"></a>
-                <a href="/"><img class ="icon" src="/images/repost.png"></a>
+                <a  href="#"><img class ="icon" src="/images/flag.png"></a>
+                <a href="#"><img class ="icon" src="/images/like.png"></a>
+                <a href="#"><img class ="icon" src="/images/repost.png"></a>
                 </div>
               </footer>
             </article>`;
@@ -129,7 +129,7 @@ function showButton() {
     $("#form-write-new-tweet").slideToggle(1000);
     $("html, body").animate({
       scrollTop: $("<nav>").offset().top + $('window').height()
-    }, 2000);
+    }) ;
   })
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
