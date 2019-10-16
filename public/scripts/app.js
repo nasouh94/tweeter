@@ -5,6 +5,8 @@
  */
 
 //the escape function prevents the user from entering javascript as an input and causing unexpected behaviors
+
+
 const escape = function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
@@ -32,7 +34,9 @@ function createTweetElement(tweet) {
                 <p class="tweet-content">${escape(tweet.content.text)}</p>
               </body>
               <footer>
-                <p class="date">${formatAMPM()}</p>
+                <p class="date">${moment(
+                  new Date(tweet.created_at)
+                ).fromNow()}</p>
                 <div class ="icon-box"> 
                 <a  href="#"><img class ="icon" src="/images/flag.png"></a>
                 <a href="#"><img class ="icon" src="/images/like.png"></a>
@@ -42,7 +46,6 @@ function createTweetElement(tweet) {
             </article>`;
 
   return $tweet;
-
 }
 
 // validates the text input and shows error messages depending on the error
@@ -70,9 +73,8 @@ $(function() {
       $(".error").slideDown();
     } else {
       $.ajax("/tweets/", { method: "POST", data: textInput })
-        .done(function() {
-          loadTweet();
-          // $(".error").css("display", "none");
+        .done(function(data) {
+          renderTweets([data])
           $("#textarea").val("");
           $(".counter").text(140);
         }).error(function() {
@@ -86,7 +88,6 @@ $(function() {
 function loadTweet() {
   $.ajax("/tweets/", { method: "GET" })
     .done(function(data) {
-      $(".tweet-container").empty();
       renderTweets(data);
 
     });
@@ -129,7 +130,7 @@ function showButton() {
     $("#form-write-new-tweet").slideToggle(1000);
     $("html, body").animate({
       scrollTop: $("<nav>").offset().top + $('window').height()
-    }) ;
+    });
   })
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

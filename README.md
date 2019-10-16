@@ -21,3 +21,4 @@ The toggles were a fun addition to add to scroll up and show and hide the text b
 
 - Express
 - Node 5.10.x or above
+- Moment.js 2.24.0
