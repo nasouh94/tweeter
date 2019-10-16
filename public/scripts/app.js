@@ -7,6 +7,7 @@
 //the escape function prevents the user from entering javascript as an input and causing unexpected behaviors
 
 
+
 const escape = function(str) {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
@@ -24,26 +25,26 @@ function renderTweets(tweets) {
 //function that creats the markup for the actual tweet, and injects the tweet data into the html
 function createTweetElement(tweet) {
   const $tweet = ` 
-<article class ="tweet">
-              <header>
-                  <img class= "profile-picture" src="${tweet.user.avatars}"> 
-                  <p class="username">${tweet.user.name}</p>
-                  <p class="handler">${tweet.user.handle}</p>
-              </header>
-              <body>
-                <p class="tweet-content">${escape(tweet.content.text)}</p>
-              </body>
-              <footer>
-                <p class="date">${moment(
-                  new Date(tweet.created_at)
-                ).fromNow()}</p>
-                <div class ="icon-box"> 
-                <a  href="#"><img class ="icon" src="/images/flag.png"></a>
-                <a href="#"><img class ="icon" src="/images/like.png"></a>
-                <a href="#"><img class ="icon" src="/images/repost.png"></a>
-                </div>
-              </footer>
-            </article>`;
+  <article class="tweet">
+  <header>
+      <img class="profile-picture" src="${tweet.user.avatars}">
+      <p class="username">${tweet.user.name}</p>
+      <p class="handler">${tweet.user.handle}</p>
+  </header>
+
+  <body>
+      <p class="tweet-content">${escape(tweet.content.text)}</p>
+  </body>
+  <footer>
+      <p class="date">${moment(new Date(tweet.created_at)).fromNow()}
+      </p>
+      <div class="icon-box">
+          <a href="#"><img class="icon" src="/images/flag.png"></a>
+          <a href="#"><img class="icon" src="/images/like.png"></a>
+          <a href="#"><img class="icon" src="/images/repost.png"></a>
+      </div>
+  </footer>
+</article>`;
 
   return $tweet;
 }
